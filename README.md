@@ -41,7 +41,7 @@ bai tap lon thiet ke website/
 ├── index.html
 ├── style.css
 ├── Logo-DH-Dai-Nam-.webp
-├── anh chinh.jpg
+├── anh_chinh.jpg
 ├── anh2.webp
 ├── anh3.jpg
 ├── anh4.jpg
