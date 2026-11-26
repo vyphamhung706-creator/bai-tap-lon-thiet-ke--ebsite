@@ -692,54 +692,114 @@ nav a:focus-visible {
     margin-top: 10px;
 }
 
+
+/* Bố cục biểu mẫu: hai cột */
+
 .contact-container form {
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 16px;
 }
 
+
+/* Nhóm nhãn và ô nhập */
+
+.contact-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    min-width: 0;
+}
+
+.contact-container .form-group-full {
+    grid-column: 1 / -1;
+}
+
+
+/* Tiêu đề ô nhập */
+
+.contact-container label {
+    color: var(--navy);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.contact-container label span {
+    color: var(--orange-dark);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* Kiểu chung cho input, select và textarea */
+
 .contact-container input,
+.contact-container select,
 .contact-container textarea {
+    display: block;
     width: 100%;
+    min-height: 52px;
 
-    padding: 13px 15px;
+    padding: 13px 16px;
 
-    border: 1px solid #dfe3e9;
-    border-radius: 10px;
+    border: 1.5px solid #a66b70;
+    border-radius: 12px;
 
     outline: none;
 
     color: var(--text);
-    background: #fcfcfd;
+    background: #ffffff;
 
-    transition: 0.2s ease;
+    font: inherit;
+    font-size: 15px;
+
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
+
+
+/* Chữ gợi ý */
+
+.contact-container input::placeholder,
+.contact-container textarea::placeholder {
+    color: #999da6;
+}
+
+
+/* Hiệu ứng khi nhấn vào */
 
 .contact-container input:focus,
+.contact-container select:focus,
 .contact-container textarea:focus {
-    border-color: var(--orange);
-
-    box-shadow: 0 0 0 3px rgba(244, 119, 33, 0.12);
+    border-color: #315f9a;
+    box-shadow: 0 0 0 3px rgba(49, 95, 154, 0.13);
 }
 
+
+/* Vùng nhập nội dung dài */
+
 .contact-container textarea {
-    min-height: 125px;
+    min-height: 155px;
+    line-height: 1.6;
     resize: vertical;
 }
 
-.contact-container button {
-    min-height: 47px;
 
-    padding: 11px 16px;
+/* Nút bên dưới biểu mẫu */
+
+.contact-container button {
+    grid-column: 1 / -1;
+    width: 100%;
+    min-height: 52px;
+
+    padding: 12px 18px;
 
     border: 0;
-    border-radius: 10px;
+    border-radius: 999px;
 
     color: #ffffff;
-    background: #aeb4be;
+    background: #a66b70;
 
     font-weight: 700;
-
     cursor: not-allowed;
 }
 
@@ -973,6 +1033,18 @@ button:focus-visible {
     .contact-info,
     .contact-container form {
         padding: 24px 20px;
+    }
+
+    /* Biểu mẫu chuyển thành một cột trên điện thoại */
+
+    .contact-container form {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .contact-container .form-group-full,
+    .contact-container button {
+        grid-column: auto;
     }
 
     footer {
