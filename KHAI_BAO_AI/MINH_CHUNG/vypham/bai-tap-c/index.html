@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phạm Hùng Vỹ – Portfolio cá nhân</title>
+  <meta name="description" content="Portfolio của Phạm Hùng Vỹ, sinh viên CNTT Đại học Đại Nam - Lập trình & Thiết kế Web.">
+  
+  <!-- Font chữ Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- (1) Navigation bar -->
+  <header class="header">
+    <nav class="nav container">
+      <a class="logo" href="#gioi-thieu">Hùng Vỹ<span>.</span></a>
+      <ul class="menu">
+        <li><a href="#gioi-thieu">Giới thiệu</a></li>
+        <li><a href="#ve-toi">Về tôi</a></li>
+        <li><a href="#ky-nang">Kỹ năng</a></li>
+        <li><a href="#du-an">Dự án</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- (2) Nội dung chính -->
+  <main>
+
+    <!-- HERO SECTION -->
+    <section id="gioi-thieu" class="hero container">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="hero-hello">👋 Sinh viên năm nhất · Đại học Đại Nam</p>
+          <h1>Xin chào, mình là <span class="highlight">Phạm Hùng Vỹ</span></h1>
+          <p class="hero-sub">Đam mê phát triển web, thích viết code, lập trình và chơi bóng chuyền. Đây là không gian nhỏ giới thiệu bản thân và các dự án học tập của mình.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#ve-toi">Làm quen với mình</a>
+            <a class="btn btn-ghost" href="#du-an">Xem dự án</a>
+          </div>
+        </div>
+
+        <figure class="portrait">
+          <img src="vy.jpg" onerror="this.onerror=null;this.src='images/avatar.svg'" alt="Chân dung Phạm Hùng Vỹ" width="480" height="600">
+          <span class="chip chip-1">💻 Lập trình Web</span>
+          <span class="chip chip-2">🏐 Bóng chuyền</span>
+          <span class="chip chip-3">🚀 Sáng tạo</span>
+        </figure>
+      </div>
+    </section>
+
+    <!-- VỀ TÔI & SỞ THÍCH -->
+    <section id="ve-toi" class="section container">
+      <div class="section-title">
+        <h2>Về tôi</h2>
+        <span class="title-bar"></span>
+      </div>
+
+      <div class="about">
+        <p class="about-text">
+          Mình là Vỹ, sinh viên năm nhất ngành <strong>Công nghệ Thông tin</strong> tại Đại học Đại Nam (Lớp CNTT 20-04, MSSV: 2071020204).
+          Mình đam mê việc biến những ý tưởng thành các giao diện web sinh động bằng dòng code chuẩn hóa.
+          Mục tiêu của mình là xây dựng các trang web giao diện đẹp, truy cập nhanh và tương thích tốt trên mọi thiết bị di động.
+        </p>
+        <dl class="about-list">
+          <div><dt>Họ và tên</dt><dd>Phạm Hùng Vỹ</dd></div>
+          <div><dt>Mã sinh viên</dt><dd>2071020204</dd></div>
+          <div><dt>Lớp</dt><dd>CNTT 20-04</dd></div>
+          <div><dt>Quê quán</dt><dd>Thái Nguyên</dd></div>
+        </dl>
+      </div>
+
+      <h3 class="sub-title">Sở thích cá nhân</h3>
+      <div class="hobbies">
+        <!-- Ảnh sở thích 1 -->
+        <figure class="hobby-card">
+          <div class="img-wrapper">
+            <img src="hvy.jpg" onerror="this.onerror=null;this.src='images/hobby-code.svg'" alt="Góc lập trình" loading="lazy">
+          </div>
+          <figcaption>
+            <strong>Góc lập trình</strong>
+            <span>Khám phá công nghệ mới mỗi ngày</span>
+          </figcaption>
+        </figure>
+
+        <!-- Ảnh sở thích 2 -->
+        <figure class="hobby-card">
+          <div class="img-wrapper">
+            <img src="vy55.png" onerror="this.onerror=null;this.src='images/hobby-music.svg'" alt="Đam mê code" loading="lazy">
+          </div>
+          <figcaption>
+            <strong>Đam mê lập trình</strong>
+            <span>Thỏa sức sáng tạo với từng dòng code</span>
+          </figcaption>
+        </figure>
+
+        <!-- Ảnh sở thích 3 -->
+        <figure class="hobby-card">
+          <div class="img-wrapper">
+            <img src="vy33.jpg" onerror="this.onerror=null;this.src='images/hobby-badminton.svg'" alt="Chơi bóng chuyền" loading="lazy">
+          </div>
+          <figcaption>
+            <strong>Bóng chuyền</strong>
+            <span>Rèn luyện thể thao & giải tỏa căng thẳng</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- KỸ NĂNG -->
+    <section id="ky-nang" class="section container">
+      <div class="section-title">
+        <h2>Kỹ năng</h2>
+        <span class="title-bar"></span>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>HTML5 Ngữ nghĩa</h3>
+          <p>Sử dụng các thẻ ngữ nghĩa (nav, main, section, article, footer) giúp cấu trúc web rõ ràng, chuẩn SEO và dễ truy cập.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <h3>CSS Flexbox & Grid</h3>
+          <p>Thạo cách dàn trang hiện đại bằng Flexbox và CSS Grid, kết hợp Biến CSS (Variables) để dễ quản lý giao diện.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">📱</div>
+          <h3>Responsive Design</h3>
+          <p>Thiết kế giao diện thích ứng mượt mà trên Desktop, Tablet và Mobile bằng Media Queries.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DỰ ÁN -->
+    <section id="du-an" class="section container">
+      <div class="section-title">
+        <h2>Dự án tiêu biểu</h2>
+        <span class="title-bar"></span>
+      </div>
+
+      <div class="projects-grid">
+        <article class="card">
+          <div class="card-img">
+            <img src="images/portfolio.svg" alt="Portfolio cá nhân" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="tag">Web Design</span>
+            <h3>Portfolio Cá Nhân</h3>
+            <p>Trang web giới thiệu bản thân tối ưu HTML5 ngữ nghĩa, giao diện responsive mượt mà và phối màu cá nhân hóa.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img">
+            <img src="images/landing.svg" alt="Landing page quán cà phê" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="tag">Landing Page</span>
+            <h3>Landing Page Quán Cà Phê</h3>
+            <p>Giao diện giới thiệu thực đơn, không gian quán và chức năng đặt bàn trực tuyến tập trung vào trải nghiệm người dùng.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img">
+            <img src="images/todo.svg" alt="Ứng dụng To-Do List" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="tag">Web App</span>
+            <h3>Danh Sách Việc Cần Làm</h3>
+            <p>Ứng dụng quản lý công việc hàng ngày giúp theo dõi tiến độ, phân chia bố cục giao diện trực quan.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- (5) Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 <strong>Phạm Hùng Vỹ</strong> · MSSV: 2071020204 · Lớp CNTT 20-04 · Đại học Đại Nam</p>
+      <p class="footer-note">Bài tập A2.1 – FIT4014 Thiết kế Web và Triển khai HTPM</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -12,19 +12,16 @@
 
     <title>Đại học Đại Nam | Website giới thiệu</title>
 
-    <!-- Kết nối file CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
-
+    <!-- HEADER -->
     <header id="trangchu">
 
         <div class="header-container">
 
-            <!-- Logo trường -->
             <a class="logo" href="#trangchu">
 
                 <img src="Logo-DH-Dai-Nam-.webp"
@@ -37,19 +34,12 @@
 
             </a>
 
-            <!-- Menu điều hướng -->
             <nav>
-
                 <a href="#trangchu">Trang chủ</a>
-
                 <a href="#gioithieu">Giới thiệu</a>
-
                 <a href="#nganhhoc">Ngành học</a>
-
                 <a href="#hinhanh">Hình ảnh</a>
-
                 <a href="#lienhe">Liên hệ</a>
-
             </nav>
 
         </div>
@@ -59,8 +49,7 @@
 
     <main>
 
-        <!-- ================= BANNER ================= -->
-
+        <!-- BANNER -->
         <section class="banner">
 
             <div class="banner-content">
@@ -85,13 +74,10 @@
 
             </div>
 
-
-            <!-- Hình ảnh banner -->
             <div class="banner-visual">
 
                 <div class="visual-frame">
 
-                    <!-- Tên ảnh chính xác: anh chinh.jpg -->
                     <img src="anh_chinh.jpg"
                         alt="Cổng Trường Đại học Đại Nam">
 
@@ -103,7 +89,6 @@
 
                     <div>
                         <strong>ĐẠI HỌC ĐẠI NAM</strong>
-
                         <p>Môi trường học tập năng động</p>
                     </div>
 
@@ -116,8 +101,7 @@
         </section>
 
 
-        <!-- ================= GIỚI THIỆU ================= -->
-
+        <!-- GIỚI THIỆU -->
         <section class="section" id="gioithieu">
 
             <div class="section-title">
@@ -132,10 +116,8 @@
 
             </div>
 
-
             <div class="intro-container">
 
-                <!-- Ảnh giới thiệu -->
                 <div class="intro-image">
 
                     <img src="anh2.webp"
@@ -143,8 +125,6 @@
 
                 </div>
 
-
-                <!-- Nội dung giới thiệu -->
                 <div class="intro-content">
 
                     <h3>Hành trình kiến tạo tri thức</h3>
@@ -166,9 +146,7 @@
                     <div class="intro-highlight">
 
                         <strong>Học tập</strong>
-
                         <strong>Sáng tạo</strong>
-
                         <strong>Phát triển</strong>
 
                     </div>
@@ -180,8 +158,7 @@
         </section>
 
 
-        <!-- ================= NGÀNH HỌC ================= -->
-
+        <!-- NGÀNH HỌC -->
         <section class="section major-section" id="nganhhoc">
 
             <div class="section-title">
@@ -197,10 +174,8 @@
 
             </div>
 
-
             <div class="major-container">
 
-                <!-- Ngành 1 -->
                 <article class="major-card">
 
                     <div class="major-icon">💻</div>
@@ -217,8 +192,6 @@
 
                 </article>
 
-
-                <!-- Ngành 2 -->
                 <article class="major-card">
 
                     <div class="major-icon">📊</div>
@@ -235,8 +208,6 @@
 
                 </article>
 
-
-                <!-- Ngành 3 -->
                 <article class="major-card">
 
                     <div class="major-icon">🌍</div>
@@ -258,8 +229,7 @@
         </section>
 
 
-        <!-- ================= THƯ VIỆN HÌNH ẢNH ================= -->
-
+        <!-- THƯ VIỆN HÌNH ẢNH -->
         <section class="section" id="hinhanh">
 
             <div class="section-title">
@@ -275,7 +245,6 @@
 
             </div>
 
-
             <div class="gallery">
 
                 <figure class="gallery-item">
@@ -289,7 +258,6 @@
 
                 </figure>
 
-
                 <figure class="gallery-item">
 
                     <img src="anh4.jpg"
@@ -300,7 +268,6 @@
                     </figcaption>
 
                 </figure>
-
 
                 <figure class="gallery-item">
 
@@ -318,8 +285,7 @@
         </section>
 
 
-        <!-- ================= LIÊN HỆ ================= -->
-
+        <!-- LIÊN HỆ -->
         <section class="contact-section" id="lienhe">
 
             <div class="section-title">
@@ -335,10 +301,9 @@
 
             </div>
 
-
             <div class="contact-container">
 
-                <!-- Thông tin liên hệ -->
+                <!-- THÔNG TIN LIÊN HỆ -->
                 <div class="contact-info">
 
                     <h3>Đại học Đại Nam</h3>
@@ -365,33 +330,110 @@
                 </div>
 
 
-                <!-- Biểu mẫu liên hệ minh họa -->
-                <form action="#" method="get"
-                    onsubmit="return false;">
+                <!-- BIỂU MẪU LIÊN HỆ -->
+                <form action="#" method="get">
 
-                    <input type="text"
-                        name="fullname"
-                        placeholder="Họ và tên"
-                        aria-label="Họ và tên">
+                    <div class="form-group">
 
-                    <input type="email"
-                        name="email"
-                        placeholder="Địa chỉ email"
-                        aria-label="Địa chỉ email">
+                        <label for="fullname">
+                            Họ và tên <span>(bắt buộc)</span>
+                        </label>
 
-                    <input type="tel"
-                        name="phone"
-                        placeholder="Số điện thoại"
-                        aria-label="Số điện thoại">
+                        <input type="text"
+                            id="fullname"
+                            name="fullname"
+                            placeholder="Ví dụ: Nguyễn Văn A"
+                            aria-label="Họ và tên"
+                            required>
 
-                    <textarea name="message"
-                        rows="5"
-                        placeholder="Nội dung cần tư vấn"
-                        aria-label="Nội dung cần tư vấn">
-                    </textarea>
+                    </div>
 
-                    <button type="button" disabled>
-                        Chức năng gửi chưa được kết nối
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Số điện thoại
+                        </label>
+
+                        <input type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Ví dụ: 0987654321"
+                            aria-label="Số điện thoại">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email <span>(bắt buộc)</span>
+                        </label>
+
+                        <input type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Ví dụ: tenban@example.com"
+                            aria-label="Địa chỉ email"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="service">
+                            Nội dung cần tư vấn
+                        </label>
+
+                        <select id="service"
+                            name="service"
+                            aria-label="Nội dung cần tư vấn">
+
+                            <option value="">
+                                Chọn nội dung cần tư vấn
+                            </option>
+
+                            <option value="tuyen-sinh">
+                                Thông tin tuyển sinh
+                            </option>
+
+                            <option value="nganh-hoc">
+                                Thông tin ngành học
+                            </option>
+
+                            <option value="hoc-phi">
+                                Học phí và học bổng
+                            </option>
+
+                            <option value="khac">
+                                Nội dung khác
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group form-group-full">
+
+                        <label for="message">
+                            Ghi chú hoặc câu hỏi
+                        </label>
+
+                        <textarea id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Nhập nội dung cần tư vấn..."
+                            aria-label="Ghi chú hoặc câu hỏi"></textarea>
+
+                    </div>
+
+
+                    <!-- NÚT GỬI ĐÃ SỬA -->
+                    <button type="submit"
+                        style="pointer-events: auto !important; cursor: pointer; opacity: 1;">
+                        Gửi thông tin
                     </button>
 
                 </form>
@@ -403,8 +445,7 @@
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
-
+    <!-- FOOTER -->
     <footer>
 
         <h2>ĐẠI HỌC ĐẠI NAM</h2>
